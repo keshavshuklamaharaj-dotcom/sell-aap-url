@@ -1,0 +1,43 @@
+<div class="shell-container">
+  <aside class="sidebar">
+    <div class="logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span>MFE Cloud</span>
+    </div>
+    <nav class="nav-links">
+      <a routerLink="/chalkboard" routerLinkActive="active" class="nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+          <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+          <path d="M2 2l5 5"></path>
+          <path d="M11 11l5 5"></path>
+        </svg>
+        Chalkboard
+      </a>
+      <a routerLink="/userflow" routerLinkActive="active" class="nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+          <circle cx="8.5" cy="7" r="4"></circle>
+          <path d="M20 8v6M23 11h-6"></path>
+        </svg>
+        User Flow
+      </a>
+    </nav>
+  </aside>
+
+  <main class="content-area">
+    <header class="top-bar">
+      <h1>Angular Microfrontend Workspace</h1>
+      <div class="user-profile">
+        <span>Admin User</span>
+        <div class="avatar"></div>
+      </div>
+    </header>
+
+    <section class="mfe-viewport">
+      <router-outlet></router-outlet>
+    </section>
+  </main>
+</div>
