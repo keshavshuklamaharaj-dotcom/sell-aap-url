@@ -32,6 +32,6 @@ export class UserFlowComponent implements OnInit {
 
   ngOnInit() {
     const timestamp = new Date().getTime();
-    this.remoteUrl = this.sanitizer.bypassSecurityTrustResourceUrl(`http://localhost:4202?t=${timestamp}`);
+    this.remoteUrl = this.sanitizer.bypassSecurityTrustResourceUrl(`https://interbizconsulting.com`);
   }
 }

@@ -32,6 +32,6 @@ export class ChalkboardRemoteComponent implements OnInit {
 
   ngOnInit() {
     const timestamp = new Date().getTime();
-    this.remoteUrl = this.sanitizer.bypassSecurityTrustResourceUrl(`https://test-pffa-hnhrb3hwaufgbmd6.z02.azurefd.net/sign-up`);
+    this.remoteUrl = this.sanitizer.bypassSecurityTrustResourceUrl(`https://test-pffa-hnhrb3hwaufgbmd6.z02.azurefd.net/access-denied`);
   }
 }
